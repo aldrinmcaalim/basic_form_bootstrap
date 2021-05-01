@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(53, 47, 91);
+  display: grid;
+  grid-template:
+    "nav nav nav" 0.6fr
+    ". main ." 1fr
+    / 1fr 1fr 1fr;
+}
+
+nav {
+  background-color: rgb(53, 47, 91);
+  grid-area: nav;
+}
+
+nav li:hover,
+nav li:active {
+  background-color: rgba(15, 13, 22, 0.5);
+}
+
+nav a:link,
+nav a:visited {
+  color: rgb(209, 209, 209);
+}
+
+nav a:hover,
+nav a:active {
+  color: rgb(255, 255, 255);
+}
+
+h4 {
+  color: rgb(238, 238, 238);
+}
+
+main {
+  grid-area: main;
+  padding-top: 50px;
+  padding-bottom: 55px;
+  background-color: rgba(15, 13, 22, 0.5);
+  border-radius: 3px;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%; */
+}
+
+section {
+  padding: 25px;
+}
+
+main label {
+  color: rgb(238, 238, 238);
+}
+
+/* .form-control {
+  width: 100%;
+} */
+
+.submit:link,
+.submit:visited {
+  border-radius: 4px;
+  background-color: rgb(53, 47, 91);
+  border-color: rgb(53, 47, 91);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.submit:hover,
+.submit:active {
+  background-color: rgba(15, 13, 22, 0.5);
+  border-color: rgba(15, 13, 22, 0.5);
+}
